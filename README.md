@@ -1,4 +1,4 @@
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/stevegood/anaxes.svg?columns=all)](https://waffle.io/stevegood/anaxes?style=flat-square)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/stevegood/anaxes.svg?columns=all&style=flat-square)](https://waffle.io/stevegood/anaxes)
 
 # Anaxes
 [Anaxes](http://starwars.wikia.com/wiki/Anaxes), situated along the Perlemian Trade Route, was a member of the Galactic Republic and housed a prominent shipyard facility.
