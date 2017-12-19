@@ -1,0 +1,103 @@
+{
+    "Pilot": {
+      "ship": {
+          "type": "Ship",
+          "relationship": "flies",
+          "serialize": false,
+          "relationshipOnly": true,
+          "relatedNodeIdField": "name"
+        },
+        "slots": {
+          "type": "Slot",
+          "dataType": "array",
+          "idField": "name",
+          "relationship": "has",
+          "serialize": false
+        },
+        "ship_override": {
+          "type": "ShipOverride",
+          "relationship": "has",
+          "serialize": true
+        },
+        "grants": {
+          "type": "Grant",
+          "relationship": "grants",
+          "serialize": true
+        },
+        "conditions": {
+          "type": "Condition",
+          "dataType": "array",
+          "idField": "name",
+          "relationship": "applies",
+          "serialize": false
+        }
+    },
+    "Ship": {
+        "maneuvers": {
+          "type": "Maneuver",
+          "relationship": "performs",
+          "serialize": true
+        },
+        "faction": {
+          "type": "Faction",
+          "relationship": "aligns",
+          "dataType": "array",
+          "idField": "name",
+          "serialize": false
+        },
+        "actions": {
+          "type": "Action",
+          "dataType": "array",
+          "idField": "name",
+          "relationship": "performs",
+          "serialize": false
+        },
+        "firing_arcs": {
+          "type": "FiringArc",
+          "relationship": "has",
+          "dataType": "array",
+          "idField": "name",
+          "serialize": false
+        },
+        "maneuvers_energy": {
+          "type": "ManeuverEnergy",
+          "relationship": "costs",
+          "serialize": true
+        }
+    },
+    "Upgrade": {
+        "slot": {
+          "type": "Slot",
+          "relationship": "fits",
+          "serialize": false,
+          "relationshipOnly": true,
+          "relatedNodeIdField": "name"
+        },
+        "size": {
+          "type": "Size",
+          "relationship": "restricted-to",
+          "dataType": "array",
+          "idField": "name",
+          "serialize": false
+        },
+        "grants": {
+          "type": "Grant",
+          "relationship": "grants",
+          "serialize": true
+        },
+        "ship": {
+          "type": "Ship",
+          "relationship": "restricted-to",
+          "dataType": "array",
+          "idField": "name",
+          "serialize": false
+        },
+        "conditions": {
+          "type": "Condition",
+          "relationship": "applies",
+          "dataType": "array",
+          "idField": "name",
+          "serialize": false
+        }
+    }
+}
